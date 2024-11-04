@@ -1,9 +1,11 @@
-pipeline{
+pipeline {
     agent any
 
-    stages{
-        stage("build"){
+    stages {
+        stage("build") {
+            steps{
             sh "df -Th"
+            }
         }
     }
 }
