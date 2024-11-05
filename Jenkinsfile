@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        KUBECONFIG = '/home/shubhankar/.kube/config'
+    }
 
     stages {
         stage("build") {
